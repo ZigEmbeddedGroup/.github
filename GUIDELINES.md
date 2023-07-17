@@ -51,3 +51,21 @@ const XmlParser = struct {
 // The initials BE (Big Endian) are just another word in Zig identifier names.
 fn read_u32_be() u32 {}
 ```
+
+## Terminology
+
+There's a lot of words out there, and sometimes precise and uniform language helps communicating.
+
+The following table contains words we should try to use when referring to certain things or actions.
+
+| Explanation                                                                                                                        | Primary Term | Accepted Alternative | Don't use |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------- | --------- |
+| Continuous sequence of bytes without an inherent delimiter. It doesn't matter if you write 10, then 20 bytes or 20, then 10 bytes. | Stream       |                      |           |
+| A known-length sequence of bytes with well defined boundaries. Not necessarily fixed size.                                         | Datagram     | Packet               |           |
+| A piece of known-length data without well defined boundaries                                                                       | Chunk        |                      |           |
+| Data is inserted into a continous stream.                                                                                          | write        |                      |           |
+| Data is extracted from a contious stream.                                                                                          | read         |                      |           |
+| Data is transmitted as a single datagram.                                                                                          | send         |                      |           |
+| Data is received as a single datagram.                                                                                             | receive      |                      |           |
+| The action of setting the level of a GPIO pin.                                                                                     | set          |                      | write     |
+| The action of reading the level from a GPIO pin.                                                                                   | get          |                      | read      |
