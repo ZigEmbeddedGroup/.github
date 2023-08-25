@@ -19,7 +19,7 @@
 | [Microchip AVR](https://github.com/ZigEmbeddedGroup/microchip-atmega)       | Degraded | ❌        | ❓        | ❓         | ❓   | ❓            |                                                                                                                    |
 | [Gigadevice GD32](https://github.com/ZigEmbeddedGroup/gigadevice-gd32)      | Degraded | ❌        | ❓        | ❓         | ❓   | ❓            |                                                                                                                    |
 | [NXP LPC](https://github.com/ZigEmbeddedGroup/nxp-lpc)                      | Degraded | ❌        | ❓        | ❓         | ❓   | ❓            |                                                                                                                    |
-| [Espressif ESP](https://github.com/ZigEmbeddedGroup/espressif-esp)          | Degraded | ❌        | ❓        | ❓         | ❓   | ❓            |                                                                                                                    |
+| [Espressif ESP](https://github.com/ZigEmbeddedGroup/espressif-esp)          | Degraded | ✅        | 🛠        | 🛠         | ❓   | ❓            |                                                                                                                    |
 | [Nordic NRF5x](https://github.com/ZigEmbeddedGroup/nordic-nrf5x)            | Degraded | ❌        | ❓        | ❓         | ❓   | ❓            |                                                                                                                    |
 
 ✅ Completed, 🛠 Work in Progress, 🧪 Experimental, ❌ Broken, ❓ Unknown
