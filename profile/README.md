@@ -5,7 +5,12 @@
 - [Project Website](https://microzig.tech)
 - [Project Wiki](https://wiki.microzig.tech)
 
-## Support Matrix
+# MicroZig
+
+- [Main Repository](https://github.com/ZigEmbeddedGroup/microzig): Core of the MicroZig Framework
+- [MicroZig Driver Framework](https://github.com/ZigEmbeddedGroup/microzig-driver-framework): Generic peripherial device drivers that can be used with MicroZig
+
+# Chip Family Support Matrix
 
 | Chip Family                                                                 | Support  | Compiles | `main()` | Registers | HAL | Abstractions | CI Status                                                                                                          |
 | --------------------------------------------------------------------------- | -------- | -------- | -------- | --------- | --- | ------------ | ------------------------------------------------------------------------------------------------------------------ |
@@ -18,3 +23,17 @@
 | [Nordic NRF5x](https://github.com/ZigEmbeddedGroup/nordic-nrf5x)            | Degraded | ❌        | ❓        | ❓         | ❓   | ❓            |                                                                                                                    |
 
 ✅ Completed, 🛠 Work in Progress, 🧪 Experimental, ❌ Broken, ❓ Unknown
+
+# Auxiliary Projects
+
+## Tools
+
+- [regz](https://github.com/ZigEmbeddedGroup/regz): SVD/ATDF to Zig converter 
+- [zcom](https://github.com/ZigEmbeddedGroup/zcom): Cross-platform serial terminal emulator
+- [uf2](https://github.com/ZigEmbeddedGroup/uf2): UF2 file generator
+
+## Libraries
+
+- [zfat](https://github.com/ZigEmbeddedGroup/zfat): FAT12/16/32 library
+- [serial](https://github.com/ZigEmbeddedGroup/serial): Cross-platform serial port library for Windows, Linux, macOs, …
+
