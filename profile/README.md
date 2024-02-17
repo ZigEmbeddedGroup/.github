@@ -7,34 +7,33 @@
 
 # MicroZig
 
-- [Main Repository](https://github.com/ZigEmbeddedGroup/microzig): Core of the MicroZig Framework
-- [MicroZig Examples](https://github.com/ZigEmbeddedGroup/microzig-examples): Contains usage examples for all board support packages
+- [Core Repository](https://github.com/ZigEmbeddedGroup/microzig): Core of the MicroZig Framework
 - [MicroZig Driver Framework](https://github.com/ZigEmbeddedGroup/microzig-driver-framework): Generic peripherial device drivers that can be used with MicroZig
 
 # Chip Family Support Matrix
 
-| Chip Family                                                                 | Support  | Examples                                                                                       | Compiles | `main()` | Registers | HAL | Abstractions | CI Status |
-| --------------------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------- | -------- | -------- | --------- | --- | ------------ | --------- |
-| [RasperryPi RP2040](https://github.com/ZigEmbeddedGroup/raspberrypi-rp2040) | Mature   | [Examples](https://github.com/ZigEmbeddedGroup/microzig-examples/tree/main/raspberrypi-rp2040) | ✅        | ✅        | ✅         | 🛠   | 🧪            | *Missing* |
-| [ST STM32](https://github.com/ZigEmbeddedGroup/stmicro-stm32)               | Rough    | [Examples](https://github.com/ZigEmbeddedGroup/microzig-examples/tree/main/stmicro-stm32)      | ✅        | ❓        | ❓         | ❓   | ❓            | *Missing* |
-| [Microchip AVR](https://github.com/ZigEmbeddedGroup/microchip-atmega)       | Degraded | [Examples](https://github.com/ZigEmbeddedGroup/microzig-examples/tree/main/microchip-atmega)   | ❌        | ❓        | ❓         | ❓   | ❓            | *Missing* |
-| [Gigadevice GD32](https://github.com/ZigEmbeddedGroup/gigadevice-gd32)      | Degraded | [Examples](https://github.com/ZigEmbeddedGroup/microzig-examples/tree/main/gigadevice-gd32)    | ✅        | ❓        | ❓         | ❓   | ❓            | *Missing* |
-| [NXP LPC](https://github.com/ZigEmbeddedGroup/nxp-lpc)                      | Rough    | [Examples](https://github.com/ZigEmbeddedGroup/microzig-examples/tree/main/nxp-lpc)            | ✅        | ❓        | ❓         | ❓   | ❓            | *Missing* |
-| [Espressif ESP](https://github.com/ZigEmbeddedGroup/espressif-esp)          | Rough    | [Examples](https://github.com/ZigEmbeddedGroup/microzig-examples/tree/main/espressif-esp)      | ✅        | 🛠        | 🛠         | ❓   | ❓            | *Missing* |
-| [Nordic NRF5x](https://github.com/ZigEmbeddedGroup/nordic-nrf5x)            | Rough    | [Examples](https://github.com/ZigEmbeddedGroup/microzig-examples/tree/main/nordic-nrf5x)       | ✅        | 🛠        | 🛠         | ❓   | ❓            | *Missing* |
-
-✅ Completed, 🛠 Work in Progress, 🧪 Experimental, ❌ Broken, ❓ Unknown
+> Please take a look at the list of [board support packages](https://github.com/ZigEmbeddedGroup/microzig/tree/main/board-support) for now, we're doing some restructuring of the repositories
 
 # Auxiliary Projects
 
-## Tools
+## Our Own Tools
 
 - [regz](https://github.com/ZigEmbeddedGroup/regz): SVD/ATDF to Zig converter 
 - [zcom](https://github.com/ZigEmbeddedGroup/zcom): Cross-platform serial terminal emulator
 - [uf2](https://github.com/ZigEmbeddedGroup/uf2): UF2 file generator
+- [aviron](https://github.com/ZigEmbeddedGroup/aviron): Configurable AVR simulator
 
-## Libraries
+## Our Own Libraries
 
 - [zfat](https://github.com/ZigEmbeddedGroup/zfat): FAT12/16/32 library
 - [serial](https://github.com/ZigEmbeddedGroup/serial): Cross-platform serial port library for Windows, Linux, macOs, …
+- [umm-zig](https://github.com/ZigEmbeddedGroup/umm-zig): Allocator for targets with limited amount of RAM
+- [uf2](https://github.com/ZigEmbeddedGroup/uf2): USB Flashing Format (UF2) for your build.zig
+- [lpcboo](https://github.com/ZigEmbeddedGroup/lpcboot): Implementation of the bootloader protocol for NXP LPC microcontrollers
+- [avrboot](https://github.com/ZigEmbeddedGroup/avrboot): AVR bootloader protocols
 
+## Forks
+
+- [stlink](https://github.com/ZigEmbeddedGroup/stlink): Open source STM32 MCU programming toolset, uses the zig build system
+- [picotool](https://github.com/ZigEmbeddedGroup/picotool): Tool for programming the RP2040
+- [libusb](https://github.com/ZigEmbeddedGroup/libusb): libusb with batteries...build.zig included
