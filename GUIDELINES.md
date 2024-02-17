@@ -51,3 +51,46 @@ const XmlParser = struct {
 // The initials BE (Big Endian) are just another word in Zig identifier names.
 fn read_u32_be() u32 {}
 ```
+
+## Rules
+
+- When using a constructor function, always use the fitting destructor function, and do not mix them:
+  - `init` is undone by `deinit`
+  - `create` is undone by `destroy`
+  - `alloc` is undone by `free`
+
+## Terminology
+
+There's a lot of words out there, and sometimes precise and uniform language helps communicating.
+
+The following table contains words we should try to use when referring to certain things or actions.
+
+| Explanation                                                                                                                        | Primary Term | Accepted Alternative | Don't use |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------ | -------------------- | --------- |
+| Continuous sequence of bytes without an inherent delimiter. It doesn't matter if you write 10, then 20 bytes or 20, then 10 bytes. | Stream       |                      |           |
+| A known-length sequence of bytes with well defined boundaries. Not necessarily fixed size.                                         | Datagram     | Packet               |           |
+| A piece of known-length data without well defined boundaries                                                                       | Chunk        |                      |           |
+| Data is inserted into a continous stream.                                                                                          | write        |                      |           |
+| Data is extracted from a contious stream.                                                                                          | read         |                      |           |
+| Data is transmitted as a single datagram.                                                                                          | send         |                      |           |
+| Data is received as a single datagram.                                                                                             | receive      |                      |           |
+| The action of setting the level of a GPIO pin.                                                                                     | set          |                      | write     |
+| The action of reading the level from a GPIO pin.                                                                                   | get          |                      | read      |
+|                                                                                                                                    |              |                      |           |
+| The initiator of an I²C/SPI transfer.                                                                                              | Host         | controller           | master    |
+| The receiver of an I²C/SPI transfer.                                                                                               | Device       | target               | slave     |
+| The SPI line that transmits data from host to device.                                                                              | HODI         |                      | MOSI      |
+| The SPI line that transmits data from device to host.                                                                              | HIDO         |                      | MISO      |
+| The SPI line that transmits the clock signal.                                                                                      | SCK          |                      |           |
+| The SPI line that selects a device.                                                                                                | CS           | chip select          | NS,NSS    |
+| The I²C line that transmits the data signal.                                                                                       | SDA          | serial data          | data      |
+| The I²C line that transmits the clock signal.                                                                                      | SCK          | serial clock         | clock     |
+|                                                                                                                                    |              |                      |           |
+| Configuring a device/peripherial via a config *structure*                                                                          | apply        |                      | configure |
+| Configuring a device/peripherial via a *list* of arguments                                                                         | configure    |                      | apply     |
+|                                                                                                                                    |              |                      |           |
+
+
+
+TODO:
+- init/setup/open/create
