@@ -12,7 +12,7 @@
 
 # Chip Family Support Matrix
 
-> Please take a look at the list of [board support packages](https://github.com/ZigEmbeddedGroup/microzig/tree/main/board-support) for now, we're doing some restructuring of the repositories
+![Chip Support Matrix](https://downloads.microzig.tech/.data/chip-families.svg)
 
 # Auxiliary Projects
 
