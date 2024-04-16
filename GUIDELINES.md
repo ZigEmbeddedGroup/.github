@@ -1,4 +1,4 @@
-# Zig Embedde Group Coding Guidelines
+# Zig Embedded Group Coding Guidelines
 
 ## Style Guide
 
