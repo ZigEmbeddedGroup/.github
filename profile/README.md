@@ -18,9 +18,9 @@
 
 ## Our Own Tools
 
-- [regz](https://github.com/ZigEmbeddedGroup/regz): SVD/ATDF to Zig converter 
+- [regz](https://github.com/ZigEmbeddedGroup/microzig/tree/main/tools/regz): SVD/ATDF to Zig converter 
 - [zcom](https://github.com/ZigEmbeddedGroup/zcom): Cross-platform serial terminal emulator
-- [uf2](https://github.com/ZigEmbeddedGroup/uf2): UF2 file generator
+- [uf2](https://github.com/ZigEmbeddedGroup/microzig/tree/main/tools/uf2): UF2 file generator
 - [aviron](https://github.com/ZigEmbeddedGroup/aviron): Configurable AVR simulator
 
 ## Our Own Libraries
