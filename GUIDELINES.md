@@ -5,6 +5,7 @@
 ZEG uses the regular [Zig Style Guide](https://ziglang.org/documentation/master/#Style-Guide), but derives when it comes to function naming:
 
 - Function in ZEG code are `snake_case`.
+- Types are still PascalCase, but when there is an abbreviation it is kept uppercase, and uses underscores to separate it from other components in the name
 
 ```zig
 const namespace_name = @import("dir_name/file_name.zig");
@@ -44,7 +45,7 @@ const xml_document =
     \\<document>
     \\</document>
 ;
-const XmlParser = struct {
+const XML_Parser = struct {
     field: i32,
 };
 
